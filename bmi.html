@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Your Health Hub - BMI Calculator</title>
+</head>
+<body>
+    <div class="container">
+ <!-- info section -->
+    <section id="info">
+        <div >
+                <h1 class="essay-heading" >Understanding Body Mass Index (BMI): A Vital Health Indicator</h1>
+        
+                <section class="essay-section">
+                    <h2 class="section-heading">Introduction</h2>
+                    <p class = "bmi-para">Body Mass Index (BMI) stands as a pivotal metric that offers insight into an individual's overall health by assessing the relationship between their weight and height. It has gained prominence as a widely accepted tool for determining whether a person falls under the categories of underweight, normal weight, overweight, or obese. The concept of BMI has profound implications for public health, guiding individuals towards informed decisions about their lifestyle choices.</p>
+                </section>
+        
+                <section class="essay-section">
+                    <h2 class="section-heading">Discovery and Development</h2>
+                    <p class = "bmi-para">The origins of BMI can be traced back to the mid-19th century when Belgian mathematician Adolphe Quetelet recognized the importance of quantifying the relationship between weight and height. He developed the Quetelet Index, which eventually evolved into the BMI we know today. The World Health Organization (WHO) officially adopted the BMI as a standardized tool in the late 20th century, propelling it to global recognition.</p>
+                </section>
+        
+                <section class="essay-section">
+                    <h2 class="section-heading">BMI Calculation</h2>
+                    <p class = "bmi-para">The BMI is calculated by dividing an individual's weight in kilograms by the square of their height in meters. This numerical value serves as a benchmark for categorizing individuals' weight status. A BMI below 18.5 suggests underweight, 18.5 to 24.9 indicates a normal weight, 25 to 29.9 signals overweight, and a BMI of 30 or above signifies obesity. While BMI provides a general assessment, it does not account for factors such as muscle mass and distribution of fat, which can affect its accuracy for certain individuals.</p>
+                </section>
+        
+                <section class="essay-section">
+                    <h2 class="section-heading">Health Implications</h2>
+                    <p class = "bmi-para">BMI serves as a crucial health indicator that can highlight potential risks associated with excessive weight gain or loss. Its significance extends beyond aesthetics to encompass cardiovascular health, diabetes, and other obesity-related conditions. A high BMI has been linked to a heightened risk of chronic diseases, underlining the need for individuals to be aware of their weight status and make necessary adjustments to their lifestyle.</p>
+                </section>    </section>
+
+ 
+    <section id="bmi">
+        <h2 style="text-align: center;"> Calculate Your BMI</h2>
+        <div class="bmi-content-box">
+            <label for="weight" class="custom-label">Weight:</label>
+            <input type="number" id="weight" step="0.01" class="custom-input"><br><br>
+
+            <label for="height" class="custom-label">Height:</label>
+            <input type="number" id="height" step="0.01" class="custom-input"><br><br>
+            <label for="unit" class="custom-label">Units:</label>
+            <select id="unit" class="custom-input">
+                <option value="metric">Metric (kg, m)</option>
+                <option value="imperial">Imperial (lb, in)</option>
+            </select><br><br>
+
+            <button onclick="calculateBMI()" class="custom-button">Calculate BMI</button><br><br>
+
+            <div id="result" class="custom-result"></div>
+        </div>
+    </section>
+<br><br>
+    <!-- BMI Chart Section -->
+    <section id="chart">
+        
+            <h2 style="text-align: center;">BMI Guide</h2><br><br>
+            <div class="image-container">
+                <img src="Bmi-chart.jpg" alt="Bmi Chart" class="responsive-image">
+            </div>
+    </section><br><br>
+    <section id="ending">
+        <div>
+            <h2 class="section-heading">Understanding BMI's Limitations</h2>
+            <p class="bmi-para">While Body Mass Index (BMI) is a useful tool for assessing general weight status, it has its limitations. BMI does not account for factors like muscle mass, bone density, and distribution of fat. As a result, individuals with high muscle mass may be classified as overweight or obese even if they have a healthy body composition.</p>
+            <p class="bmi-para">BMI also does not differentiate between different types of body fat, such as visceral fat that surrounds organs and subcutaneous fat beneath the skin. Moreover, it does not consider an individual's age, gender, and other health indicators that play a crucial role in overall health assessment.</p>
+            <p class="bmi-para">While BMI provides a general guideline, it's essential to consult with a healthcare professional for a comprehensive health assessment. A personalized evaluation, considering various factors, helps in making informed decisions about diet, exercise, and lifestyle modifications.</p>
+        </div>
+    </section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

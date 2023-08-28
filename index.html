@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <title>Your Health Hub</title>
+</head>
+<body>
+            <script>
+                fetch('static.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(data, 'text/html');
+                        const header = doc.querySelector('header');
+                        const footer = doc.querySelector('footer');
+        
+                        document.body.insertBefore(header, document.body.firstChild);
+                        document.body.appendChild(footer);
+                    })
+                    .catch(error => console.error('Error loading navigation and footer:', error));
+            </script>
+            
+            <main>
+             
+                <div id="content-placeholder" >
+                    <div class="container">
+                    <div class="blog-post">
+                        <h1 class="heading-index" >Your Health Hub</h1>
+                        <p class = "index-para" >Welcome to Your Health Hub, your reliable source for holistic wellness information and tools. Our mission is to empower you with knowledge and resources to achieve your health and fitness goals.
+                        
+                       Explore a wide range of topics, including nutrition, exercise, mental well-being, and more. Whether you're just starting your health journey or looking to enhance your existing routine, we're here to guide you every step of the way.
+                     Discover evidence-based insights, expert tips, and practical advice to make informed decisions for a healthier lifestyle. Remember, your well-being is our priority.</p>
+                        
+                        <div class="blog-content">
+                            <h2 class="heading-index">The Importance of Mind-Body Connection</h2>
+                            <p class = "index-para">In today's fast-paced world, it's easy to get caught up in the hustle and bustle of daily life. However, taking care of your physical health is just one part of the equation. The mind-body connection plays a crucial role in overall well-being.</p>
+                            <p class = "index-para">Research has shown that stress and negative emotions can have a significant impact on physical health. Chronic stress can lead to a range of health issues, including cardiovascular problems and weakened immune function.</p>
+                            <p class = "index-para">Practicing mindfulness, meditation, and relaxation techniques can help foster a strong mind-body connection. By taking time to nurture your mental well-being, you can enhance your physical health and achieve a balanced lifestyle.</p>
+                            <p class = "index-para">At Your Health Hub, we're dedicated to providing you with the tools and knowledge to achieve holistic wellness. Stay tuned for more articles, tips, and resources to support your health journey.</p>
+                        </div>
+                
+                    <div class="benefits-section">
+                        <h2>Why Choose Your Health Hub?</h2>
+                        <ul>
+                            <li><span class="icon">🌱</span> Comprehensive Health Information</li>
+                            <li><span class="icon">💪</span> Expert Fitness Tips</li>
+                            <li><span class="icon">🥗</span> Nutritional Guidance</li>
+                            <li><span class="icon">😌</span> Mental Wellness Resources</li>
+                            <li><span class="icon">🍏</span> Healthy Recipes</li>
+                            <li><span class="icon">📚</span> Reliable Wellness Insights</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="quote-section">
+                        <blockquote>
+                            "Health is a journey, and we're here to be your compass. Let's embark on this wellness adventure together!"
+                        </blockquote>
+                        <p>- Your Health Hub Team</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+                
+
+    </main>
+   
+    <script src="script.js"></script>
+</body>
+</html>
