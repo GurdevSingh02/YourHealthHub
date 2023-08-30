@@ -41,13 +41,22 @@
         <section id="bmi">
             <h2 style="text-align: center;">Calculate Your BMI</h2>
             <div class="bmi-content-box">
-                <!-- BMI Calculator Inputs -->
                 <label for="weight" class="custom-label">Weight:</label>
                 <input type="number" id="weight" step="0.01" class="custom-input"><br><br>
+                
+                <label for="height" class="custom-label">Height:</label>
+                <input type="number" id="height" step="0.01" class="custom-input"><br><br>
+                
+                <label for="unit" class="custom-label">Units:</label>
+                <select id="unit" class="custom-input">
+                    <option value="metric">Metric(kg,m)</option>
+                    <option value="imperial">Imperial(lbs,in)</option>
+                </select><br><br>
+                
                 <button onclick="calculateBMI()" class="custom-button">Calculate BMI</button><br><br>
                 <div id="result" class="custom-result"></div>
             </div>
-        </section>
+            
 
         <!-- BMI Chart Section -->
         <section id="chart">

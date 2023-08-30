@@ -184,15 +184,8 @@ footer {
     font-size: 16px;
 }
 
-.image-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-.responsive-image {
-    width: 100%; 
-    height: auto; 
-}
+
 .essay-container {
     max-width: 800px;
     margin: 0 auto;
@@ -219,7 +212,8 @@ footer {
 .section-heading {
     font-size: 28px;
     margin-bottom: 10px;
-    color: #bab4b4; 
+    color: #000000; 
+    text-align: center;
 }
 
 .bmi-para    {   font-size: 18px;
@@ -278,4 +272,9 @@ footer {
 .recipe-section h2 {
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+
+.backtomain{
+    text-align: center;
 }
