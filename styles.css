@@ -285,3 +285,11 @@ footer {
 .backtomain{
     text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+    /* Change to block on smaller screens */
+    nav ul li {
+        display: block;
+        margin: 10px 0; 
+    }
+}
